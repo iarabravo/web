@@ -111,7 +111,7 @@ body {
 
 /* Home Page*/
 #hero {
-    background-image: url("img/homepage.jpg");
+    background-image: url("img/homepage.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
