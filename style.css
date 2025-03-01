@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --color-primario: #6b0b40;
+    --color-secundario: #6e4231;
+    --color-fondo: #f7ffff;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +27,7 @@ h2 {
 
 h4 {
     font-size: 20px;
-    color:black;
+    color:color;
 }
 
 h6 {
@@ -65,8 +71,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #ffff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    background:var(--color-fondo);
+    box-shadow: 0 5px 15px var(--color-secundario);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -89,13 +95,13 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color: black;
+    color: var(--color-secundario);
     transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: red;
+    color: var(--color-primario);
 }
 
 #navbar li a.active::after,
@@ -103,7 +109,7 @@ body {
     content: "";
     width: 30%;
     height: 2px;
-    background: red;
+    background: var(--color-primario);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -132,8 +138,8 @@ body {
 }
 
 #hero button{
-    background-color: #465b52;
-    color: bisque;
+    background-color:var(--color-primario);
+    color: var(--color-fondo);
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -147,20 +153,22 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: var(--color-fondo);
 }
 
 #feature .fe-box{
     width: 180px;
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0,0,0,0.3);
-    border: 1px solid #c2c2c2;
+    box-shadow: 20px 20px 34px rgba(223, 223, 223, 0.3);
+    border: 1px solid var(--color-primario);
     border-radius: 4px;
     margin: 15px 0;
+    background-color: var(--color-primario);
 }
 
 #feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+    box-shadow: 10px 10px 54px var(--color-primario);
 }
 
 #feature .fe-box img{
@@ -173,24 +181,33 @@ body {
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 4px;
-    color: black;
-    background-color: antiquewhite;
+    color: var(--color-primario);
+    background-color: var(--color-fondo);
 }
 
 #feature .fe-box:nth-child(2) h6{
-    background-color: #cbebbc;
+    background-color: var(--color-fondo);
 }
 
 #feature .fe-box:nth-child(3) h6{
-    background-color: antiquewhite;
+    background-color: var(--color-fondo);
 }
 
 #feature .fe-box:nth-child(4) h6{
-    background-color: #cbebbc;
+    background-color: var(--color-fondo);
 }
 
 #product1{
     text-align: center;
+    background-color: var(--color-fondo);
+}
+
+#product1 h2{
+    color: var(--color-primario);
+}
+
+#product1 p{
+    color: var(--color-secundario);
 }
 
 #product1 .pro-container{
@@ -211,11 +228,10 @@ body {
     margin: 15px 0;
     transition: 0,2s ease;
     position: relative;
-
 }
 
 #product1 .pro:hover{
-    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.06);
+    box-shadow: 20px 20px 30px var(--color-secundario);
 }
 
 #product1 .pro img{
@@ -229,19 +245,19 @@ body {
 }
 
 #product1 .pro .des span{
-    color: #606063;
+    color: #000;
     font-size: 12px;
 }
 
 #product1 .pro .des h5{
     padding-top: 7px;
-    color: #1a1a1a;
+    color: var(--color-secundario);
     font-size: 14px;
 }
 
 #product1 .pro .des h4{
     padding-top: 4px;
-    color: #ce2929;
+    color: var(--color-primario);
     font-size: 14px;
 }
 
@@ -250,7 +266,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: blue;
+    background-color: var(--color-primario);
     background-repeat: no-repeat;
     background-position: 20% 30%;
 }
@@ -258,17 +274,17 @@ body {
 #newsletter h4{
     font-size: 22px;
     font-weight: 700;
-    color: #ffff;
+    color: var(--color-fondo);
 }
 
 #newsletter p{
     font-size: 14px;
     font-weight: 600;
-    color: #818ea0;
+    color: var(--color-fondo);
 }
 
 #newsletter p span{
-    color: #ffbd27;
+    color: var(--color-fondo);
 }
 
 #newsletter .form{
@@ -289,8 +305,8 @@ body {
 }
 
 #newsletter button{
-    background-color: #818ea0;
-    color: white;
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -300,6 +316,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: var(--color-fondo);
 }
 
 footer .col{
@@ -316,17 +333,19 @@ footer .logo{
 footer h4{
     font-size: 14px;
     padding-bottom: 20px;
+    color: var(--color-primario);
 }
 
 footer p{
     font-size: 13px;
     margin: 0 0 8px 0;
+    color: var(--color-secundario);
 }
 
 footer a{
     font-size: 13px;
     text-decoration: none;
-    color: #222;
+    color: var(--color-secundario);
     margin-bottom: 10px;
 }
 

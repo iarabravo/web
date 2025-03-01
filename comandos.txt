@@ -1,3 +1,7 @@
 git add .
 git commit -m "Se ha generado cambios"
 git push origin main
+
+https://huemint.com/website-1/#palette=fcfcfb-b9b4a1-1c4767
+https://huemint.com/website-1/#palette=8d1818-fdfef8-af9b81
+https://huemint.com/website-1/#palette=fb584c-d5f7e6-064d9c
