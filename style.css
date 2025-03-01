@@ -188,6 +188,10 @@ body {
     color: white;
 }
 
+#hero p{
+    color: var(--color-fondo);
+}
+
 #hero button{
     background-color:var(--color-primario);
     color: var(--color-fondo);
