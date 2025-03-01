@@ -115,6 +115,57 @@ body {
     left: 20px;
 }
 
+/* Mostrar submenú cuando el mouse pasa por el menú */
+#navbar li:hover .submenu {
+    display: block;
+}
+
+/* Para asegurarte de que el submenú no desaparezca cuando se pasa el mouse sobre él */
+#navbar li .submenu:hover {
+    display: block;
+}
+
+/* Estilos del submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-fondo);
+    list-style: none;
+    padding: 15px 0; /* Más espacio dentro del submenú */
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados para un diseño más moderno */
+}
+
+/* Mayor separación entre elementos del submenú */
+.submenu li {
+    padding: 15px 25px; /* Aumentar padding para más espacio */
+    margin: 15px; /* Espacio entre elementos */
+    
+}
+
+/* Efecto hover para mejorar la visibilidad */
+.submenu li a {
+    display: block;
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mostrar el submenú cuando se pasa el mouse sobre "Mujer" */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Opcional: Cambiar color de fondo al pasar el mouse */
+.submenu li:hover {
+    background-color: #f0f0f0;
+}
+
 /* Home Page*/
 #hero {
     background-image: url("img/homepage.png");
