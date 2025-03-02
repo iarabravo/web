@@ -530,6 +530,18 @@ footer .copyright{
     #newsletter .form{
         width: 70%;
     }
+        /*Single Product*/
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+    }
 }
 
 @media (max-width:477px){
@@ -645,22 +657,23 @@ footer .copyright{
 }
 
 #prodetails .single-pro-details h4{
+    font-size: 30px;
     padding: 20px 0 0px 0;
     color: var(--color-primario);
 }
 
 #prodetails .single-pro-details h2{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #prodetails .single-pro-details h3{
-    font-size: 16px;
+    font-size: 20px;
     color: var(--color-secundario);
 }
 
 #prodetails .single-pro-details span{
     line-height: 25px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #prodetails .single-pro-details select{
