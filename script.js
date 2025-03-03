@@ -44,4 +44,16 @@ smallImg[2].onclick=function(){
 smallImg[3].onclick=function(){
     MainImg.src = smallImg[3].src;
 }
+smallImg[4].onclick=function(){
+    MainImg.src = smallImg[4].src;
+}
+smallImg[5].onclick=function(){
+    MainImg.src = smallImg[5].src;
+}
+smallImg[6].onclick=function(){
+    MainImg.src = smallImg[6].src;
+}
+smallImg[7].onclick=function(){
+    MainImg.src = smallImg[7].src;
+}
 
