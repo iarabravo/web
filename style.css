@@ -538,6 +538,18 @@ footer .copyright{
     margin-right: 10px;
 }
 
+.icon a {
+    font-size: 1.3rem; /* Aumenta el tamaño de los íconos */
+    margin: 0 5px; /* Espaciado entre íconos */
+    color: #000; /* Color de los íconos (puedes cambiarlo) */
+    text-decoration: none; /* Elimina subrayado si lo hay */
+  }
+  
+  .icon a:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+  }
+  
+
 @media (max-width:799px) {
     .section-p1{
         padding: 40px 40px;
