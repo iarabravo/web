@@ -548,6 +548,10 @@ footer .copyright{
   .icon a:hover {
     color: #007bff; /* Cambia el color al pasar el mouse */
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
 
 @media (max-width:799px) {
